@@ -33,7 +33,7 @@ class App extends React.Component<any, IAppState> {
     const loading = !(infoText && styles)
     return (
       <Loading
-        loadingText='稍等，正在下载模板...'
+        loadingText='稍等，正在加载信息文件...'
         loading={loading}>
         <div className='main-pane'>
           <div className="text-pane">
