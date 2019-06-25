@@ -1,0 +1,33 @@
+.animation-styles {
+  width: 400px;
+  height: 100%;
+  background-color: #333333;
+  color: white;
+  padding: 20px 16px;
+  overflow-y: scroll;
+  .content {
+    letter-spacing: 1px;
+    .token.comment {
+      display: block;
+      color: #8e8e8e;
+      margin: 20px 0 8px;
+      &:first-child {
+        margin-top: 12px;
+      }
+    }
+
+    .token.property {
+      margin-left: 15px;
+      color: #e8bf6a;
+    }
+
+    .token.property + .token.punctuation:after {
+      display: inline;
+    }
+
+    .token.punctuation:after {
+      content: '';
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+/* 现在来加点样式吧！ */
+.title {
+  border-bottom: 1px solid #a7a7a7;
+  padding-bottom: 12px;
+}
+/* 基础信息的层级不够明确，我们再来改一下 */
+p strong::after {
+  content: ':';
+  margin-right: 8px;
+  font-size: 16px;
+  color: #000;
+}
+
+/* 链接的样式也优化一下 */
+a {
+  color: #75bffb;
+}
+
+/* 接下来，稍微改一下技能的样式 */
+ul.skills {
+  padding-left: 20px;
+}
+
+ul.skills li {
+  line-height: 150%;
+  letter-spacing: 1px;
+}
+/* 最后，隐藏一下没必要的东西 */
+.hidden {
+  display: none;
+}
+/* 结束啦，感谢您的观看 */
