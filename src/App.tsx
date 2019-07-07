@@ -60,7 +60,9 @@ class App extends React.Component<any, IAppState> {
   private fetchInfo = async () => {
     try {
       const service = new ApiService(staticDirectory)
-      const infoText = await service.get({ path: 'template.html' })
+      const infoText = await service.get({
+        path: 'template.html'
+      })
       this.setState({ infoText })
     } catch (error) {
       console.error(error)
@@ -70,7 +72,9 @@ class App extends React.Component<any, IAppState> {
   private fetchStyles = async () => {
     try {
       const service = new ApiService(staticDirectory)
-      const styles = await service.get({ path: 'styles.css' })
+      const styles = await service.get({
+        path: 'styles.css'
+      })
       this.setState({ styles })
     } catch (error) {
       console.error(error)

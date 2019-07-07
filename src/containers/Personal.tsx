@@ -12,7 +12,9 @@ const Personal: React.FunctionComponent<IPersonalProps> = ({
   if (!infoText) {
     return null
   }
-  const text = useTextAnimation({ text: infoText, onFinished })
+  const text = useTextAnimation({
+    text: infoText, onFinished
+  })
   return (
     <div dangerouslySetInnerHTML={{ __html: text }}/>
   )

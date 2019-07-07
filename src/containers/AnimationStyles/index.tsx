@@ -15,7 +15,10 @@ const AnimationStyles: React.FunctionComponent<IAnimationStylesProps> = ({
     return null
   }
   const ref = React.useRef<HTMLDivElement>(null)
-  const calculatedStyles = useTextAnimation({ text: styles, interval: 40 })
+  const calculatedStyles = useTextAnimation({
+    text: styles,
+    interval: 40
+  })
   React.useEffect(() => {
     const container = ref.current as HTMLDivElement
     container.scrollTo(0, Number.MAX_SAFE_INTEGER)
